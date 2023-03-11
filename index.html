@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="Zhaoqi's profile"></title> <!--create an element in the web document-->
+        <!-- insert font from google font -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- <div class="logo">Profile</div> -->
+            <div class="navigator">
+                <ul>
+                    <li>
+                        <a href="#banner" onclick="toggleMenu();">Home</a>
+                    </li>
+        
+                    <li>
+                        <a href="#about" onclick="toggleMenu();">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#services" onclick="toggleMenu();">Skills</a>
+                    </li>
+
+                    <!-- <li>
+                        <a href="#projects" onclick="toggleMenu();">Projects</a>
+                    </li> -->
+
+                    <li>
+                        <a href="#contact" onclick="toggleMenu();">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="topbar">
+                    <a href="#" class="logo">Portfolio</a>
+                    <div class="toggle">
+                        <i class="fa-solid fa-circle-chevron-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <!-- banner -->
+                <section class="banner" id="banner">
+                    <div class="content">
+                        <div class="imgBx">
+                            <img src="Zhaoqi.JPG">
+                        </div>
+                        <h3>Zhaoqi Wang</h3>
+                        <p>I'm a problem-solving, motivated and responsible graduate IT student with a four months backend developer experience. I'm passinate about learning technologies and seeking a software developer/data analyst role to apply my skills  </p>
+                        <a href="cv.pdf" download="cv_Zhaoqi_Wang" class="btn">Download CV</a>
+                        <ul class="socialMedia">
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- About me -->
+                <!-- both about and adjust class from style can affect this session -->
+                <section class="about adjust" id="about">
+                    <div class="title">
+                        <h2>About me</h2>
+                    </div>
+                    <div class="content">
+                        <div class="textBox">
+                            <p>Master degree on Information technology (AI) from The University of Melbourne.</p>
+                            <br>
+                            <p>Backend developer internship in StayorGo.</p>
+                            <br>
+                            <p>Enjoy self learning.</p>
+                            <br>
+                            <p>Enjoy connections with people.</p>
+                            <br>
+                            <p>Love coding, reading and music.</p>
+                        </div>
+                        <div class="imgBx">
+                            <img src="Zhaoqi2 copy.JPG"></img>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- services -->
+                <section class="services adjust" id="services">
+                    <div class="title">
+                        <h2>My skills</h2>
+                        <p>Python is my most commonly used language. Besides, I'm fammilar with Java, Html, JavaScript, SQL, Github and Docker.</p>
+                    </div>
+                    <div class='content'>
+                        <div class="serviceBox">
+                            <img src="backend.png"></img>
+                            <h2>Backend Development</h2>
+                            <p>Python(Django), Docker, SQL, Github, API</p>
+                        </div>
+                        <div class="serviceBox">
+                            <img src="ui.png"></img>
+                            <h2>Frontend Development</h2>
+                            <p>Html,Javascript</p>
+                        </div>
+                        <div class="serviceBox">
+                            <img src="visualisation.png"></img>
+                            <h2>Data analyzing</h2>
+                            <p>data cleaning, normalization and vasualization</p>
+                            <br>
+                            <p>Python, Excel, Tableau, SQL, R, JavaScript</p>
+                        </div>
+                        <div class="serviceBox">
+                            <img src="visualisation.png"></img>
+                            <h2>Machine learning</h2>
+                            <p>Python</p>
+                        </div>
+                        <div class="serviceBox">
+                            <img src="visualisation.png"></img>
+                            <h2>Testing</h2>
+                            <p>Automated, manual and performance test</p>
+                            <br>
+                            <p>Software development lifecycle(SDLC)</p>
+                        </div>
+                        <div class="serviceBox">
+                            <img src="visualisation.png"></img>
+                            <h2>System administration</h2>
+                            <p>pass</p>
+                        </div>
+                    </div>
+                    
+                </section>
+                <!-- projects -->
+                <!-- <section class="project adjust" id="projects">
+                    <div class="title">
+                        <h2>My projects</h2>
+                        <p>I'm a problem-solving master of Information technology (AI) with 4 months of back-end intern experience using python and excel for a Fintech startup. I provided troubleshooting, analyzing, designing, and back-end developing services that expanded company’s production with two new products in 4 months. I’m seeking a software developer role to apply my developing and analyzing knowledge.</p>
+                    </div>
+                    <div class='content'>
+                        <div class="workBx">
+                            <div class="imgBx">
+                                <img src="backend.png"></img>
+                            </div>
+                            <div class="textBx">
+                                <h3>Project 1</h3>
+                            </div>
+                        </div>
+                        <div class="workBx">
+                            <div class="imgBx">
+                                <img src="backend.png"></img>
+                            </div>
+                            <div class="textBx">
+                                <h3>Project 2</h3>
+                            </div>
+                        </div>
+                        <div class="workBx">
+                            <div class="imgBx">
+                                <img src="backend.png"></img>
+                            </div>
+                            <div class="textBx">
+                                <h3>Project 3</h3>
+                            </div>
+                        </div>
+                        <div class="workBx">
+                            <div class="imgBx">
+                                <img src="backend.png"></img>
+                            </div>
+                            <div class="textBx">
+                                <h3>Project 4</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section> -->
+                 <!-- Contact me -->
+                 <section class="contact adjust" id="contact">
+                    <div class="title">
+                        <h2>Contact me</h2>
+                        <p>Please contact me through zhaoqiwang1997@gmail.com, or:</p>
+                    </div>
+                    <div class="contactForm">
+                        <div class="row">
+                            <input type="text" name="" placeholder="First Name">
+                            <input type="text" name="" placeholder="Last Name">
+                        </div>
+                        <div class="row">
+                            <input type="text" name="" placeholder="Email Address">
+                            <input type="text" name="" placeholder="Phone number">
+                        </div>
+                        <div class="row2">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <div class="row2">
+                            <input type="submit" value="send">
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>        
+    </body>
+    <script src="main.js"></script>
+</html>
